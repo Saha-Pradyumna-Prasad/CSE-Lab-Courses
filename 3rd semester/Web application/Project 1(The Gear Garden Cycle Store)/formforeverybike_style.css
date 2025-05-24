@@ -1,0 +1,114 @@
+body{
+    width: 1500px;
+    height: 700px;
+    /* border: 1px solid black; */
+background-image: url(formimage.jpg);
+background-position: 100%;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+.formouterbox{
+    width: 600px;
+    height: 680px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    left: 700px;
+    top: 40px;
+    text-align: center;
+    background-color: rgb(172, 187, 182);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    font-size: 40px;
+}
+.usertxt{
+    font-size:30px ;
+}
+.usertxtinputbox{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+    background-color: rgb(203, 196, 196);
+}
+.phonetxt{
+    font-size:30px ;
+}
+.phonetxtinputbox{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+      background-color: rgb(203, 196, 196);
+}
+.emailtxt{
+    font-size:30px ;
+}
+.emailtxtinputbox{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+      background-color: rgb(203, 196, 196);
+}
+.addresstxt{
+    font-size:30px ;
+}
+.addresstxtinputbox{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+      background-color: rgb(203, 196, 196);
+}
+.countrybox{
+    font-size:30px ;
+}
+.countryinputbox{
+width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+      background-color: rgb(203, 196, 196);
+}
+.amounttxtbox{
+    font-size:30px ;
+}
+.amountinputbox{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+      background-color: rgb(203, 196, 196);
+}
+.selectpayment{
+    color: black;
+}
+.paymenttxtbox{
+    font-size:30px ;
+}
+.paymentinputbox{
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+      background-color: rgb(203, 196, 196);
+}
+.submitbtn{
+    width:200px;
+    height: 30px;
+    border: 1px solid black;
+    font-size:20px ;
+    border-radius: 10px;
+}
+.submitbtn:hover{
+    background-color: rgb(222, 212, 11);
+}

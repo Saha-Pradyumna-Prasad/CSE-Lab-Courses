@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(112, 117, 115);
+}
+ .outerbox{
+    width: 1200px;
+    height: 720px;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+    left: 150px;
+    background-image:url(https://images.unsplash.com/photo-1541625602330-2277a4c46182?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3ljbGluZ3xlbnwwfHwwfHx8MA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;   
+ }
+ 
+ .contract_info_box{
+    width: 500px;
+    height: 700px;
+    /* border: 1px solid black; */
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+
+ }
+ .picbox{
+    width: 500px;
+    height: 700px;
+    border-radius: 20%;
+    border: 5px solid black;
+    background-image: url(contractboxpic.jpeg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    position: relative;
+    top: 20px;
+    left: 330px;
+
+ }
+ h1{
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 60px;
+    font-family: monospace;
+    position: relative;
+    left: 80px;
+    top: 300px;
+    color: rgb(216, 249, 4);
+    text-align: center;
+    background: linear-gradient(to left top,  red 50%, blue);
+    border-radius: 30px;
+
+
+ }
+ .infobox{
+    width: 490px;
+    height: 250px;
+    border: 1px double rgb(248, 8, 12);
+    position: relative;
+    top: 250px;
+    left: 50px;
+    background-color: blanchedalmond;
+    border-radius: 30px;
+ }
+h2{
+    font-size: 30px;
+    position: relative;
+    left: 80px;
+}
+.email{
+    font-size: 30px;
+    position: relative;
+    left: 50px;
+}
+.back{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to left top,  rgb(197, 174, 26) 50%, rgb(0, 255, 42));
+    border-radius: 30px;
+    /* position: relative;
+    left: 200px; */
+
+}
+p{
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

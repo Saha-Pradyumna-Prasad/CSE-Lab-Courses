@@ -1,0 +1,61 @@
+body{
+    background-color:rgb(188, 217, 28);
+
+}
+.gardengear{
+height: 500px;
+width: 1550px; 
+border: 1px solid black;
+font-size: 90px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: flex;
+justify-content:center;
+background: linear-gradient(to left top,  red 30%, blue );
+position: relative;
+left: 0px;
+top: 0px;
+background-image: url(https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg);
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+
+
+}
+.welcombox{
+    height: 500px;
+    width: 1550px;
+    border: 1px solid black;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    
+    background: linear-gradient(to left top,  rgb(162, 56, 56) 30%, rgb(0, 255, 200) );
+    position: relative;
+    left: 0px;
+    top: 0px;
+    
+    background-image: url(https://img.freepik.com/premium-photo/silhouette-cyclist-sunset-background_33862-706.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info{
+    height: 200px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 90px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-035QUgRDx4jsQWrvknSpnCu5XHCVCHcxwg&s);
+   background-size: cover;
+   background-position: center;
+    position:relative;
+    left: 450px;
+}
+h1{
+    text-align: center;
+}

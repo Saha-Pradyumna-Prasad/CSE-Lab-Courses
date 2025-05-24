@@ -1,0 +1,310 @@
+body{
+    background-color: rgb(183, 203, 203);
+}
+.cyclecartoonpic{
+    width: 1500px;
+    height: 700px;
+    border: 1px solid black;
+    background-image: url(https://i.pinimg.com/originals/0b/c8/32/0bc832ed5dc454790e2465da61dcfd51.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+}
+.letsfun{
+    width: 620px;
+    height: 200px;
+    /* border: 1px solid white; */
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    position: relative;
+    top: 400px;
+    left: 100px;
+}
+.lookingword{
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    left: 80px;
+}
+.outerbox{
+    width: 1500px;
+    height: 460px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.velocebox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 50px; */
+    background-image: url(https://velocebike.com/bangladesh/wp-content/uploads/sites/8/2020/11/AV8A4985-scaled-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.velocebox:hover{
+    width: 350px;
+    height: 500px;
+}
+.vel{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.foxterbox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 150px; */
+    background-image: url(foxtercyclepic.jpeg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foxterbox:hover{
+    width: 350px;
+    height: 500px;
+}
+.fox{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.phonixbox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 150px; */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgIYgRTHufSOYbMC4RE9av42r3BpqPVGDmmW9K_pZjR5NGaQigGZWmT_COMlq7X8JkTVM&usqp=CAU);
+    background-position:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.phonixbox:hover{
+    width: 350px;
+    height: 500px;
+}
+.phon{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.giantbox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 150px; */
+    background-image: url(https://www.shutterstock.com/image-photo/taglio-di-po-italy-11-260nw-1614273577.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.giantbox:hover{
+    width: 350px;
+    height: 500px;
+}
+.gia{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.outerbox2{
+    width: 1500px;
+    height: 460px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.Scottbox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 50px; */
+    background-image: url(https://w0.peakpx.com/wallpaper/410/916/HD-wallpaper-scott-bike-cycling-sports-thumbnail.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Scottbox:hover{
+    width: 350px;
+    height: 500px;
+}
+.scott{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.Meridabox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 150px; */
+    background-image: url(https://thumbs.dreamstime.com/b/merida-bicycle-park-bishkek-kyrgyzstan-april-merida-bicycle-park-bicycle-meadow-sunset-shallow-dept-125202301.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Meridabox:hover{
+    width: 350px;
+    height: 500px;
+}
+.merida{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.Trekbox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 150px; */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFwjcg1Bh-Ho9c8aesnbdWJjjxo-fL1cpPnw&s);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Trekbox:hover{
+    width: 350px;
+    height: 500px;
+}
+.trek{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.rockriderbox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative;
+    left: 150px; */
+    background-image: url(https://w0.peakpx.com/wallpaper/850/230/HD-wallpaper-rockrider-btwin-bicicleta-bike-cicling-mtb-speed.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rockriderbox:hover{
+    width: 350px;
+    height: 500px;
+}
+.rock{
+    width:220px;
+    height: 70px;
+    border: 1px solid rgb(250, 249, 249);
+    font-size: 35px;
+    color: black;
+    position: relative;
+    top: 380px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choosebike{
+    width: 1500px;
+    height: 100px;
+    /* border: 1px solid black; */
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+.footer{
+    width: 1500px;
+    height: 150px;
+    border: 1px solid black;
+    background: linear-gradient(to left top,rgb(53, 51, 51) 30%, rgb(20, 20, 22));
+}
+.back{
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background:linear-gradient(to top left,red 30%, blue) ;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color: white;
+}

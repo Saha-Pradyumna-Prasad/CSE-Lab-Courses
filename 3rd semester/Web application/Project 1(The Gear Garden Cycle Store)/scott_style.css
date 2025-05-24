@@ -1,0 +1,212 @@
+body{
+    background-image: url(https://a-static.besthdwallpaper.com/athlete-riding-a-bike-and-the-reflection-of-the-bike-in-the-water-with-wallpaper-1680x1260-95126_24.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.best{
+    width: 1500px;
+    height: 100px;
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.box1{
+    width: 1500px;
+    height:400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.one{
+    width:350px ;
+    height: 390px;
+    border: 1px solid black;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/7oGGFwjxThNRJDKNRLg8bb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 70%;
+}
+.one:hover{
+    width:400px ;
+    height: 430px;
+    border-radius: 10%;https://cdn.mos.cms.futurecdn.net/7oGGFwjxThNRJDKNRLg8bb.jpg
+}
+.price_one{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(251, 249, 249);
+    font-size: 30px;
+    color: black;
+   background-color: gray;border-radius: 10px;
+   text-align: center;
+   position: relative;
+   top: 345px;
+}
+
+.two{
+    width:350px ;
+    height: 390px;
+    border: 1px solid black;
+    background-image: url(https://dqh479dn9vg99.cloudfront.net/wp-content/uploads/sites/9/2023/07/scott-foil-rc-romain-bardet-dsm-pro-bike-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    border-radius: 70%;
+}
+.two:hover{
+    width:400px ;
+    height: 430px;
+    border-radius: 10%;
+}
+.price_two{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(251, 249, 249);
+    font-size: 30px;
+    color: black;
+   background-color: gray;border-radius: 10px;
+   text-align: center;
+   position: relative;
+   top: 345px;
+}
+
+.three{
+    width:350px ;
+    height: 390px;
+    border: 1px solid black;
+    background-image: url(https://roadbikeaction.com/wp-content/uploads/2021/02/DSM-Team-Bike_2021_SCOTT_Image-by-Jochen-Haar_9209-scaled-e1614283275642.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 70%;
+}
+.three:hover{
+    width:400px ;
+    height: 430px;
+    border-radius: 10%;
+}
+.price_three{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(251, 249, 249);
+    font-size: 30px;
+    color: black;
+   background-color: gray;border-radius: 10px;
+   text-align: center;
+   position: relative;
+   top: 345px;
+}
+.box2{
+    width: 1500px;
+    height:400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.four{
+    width:350px ;
+    height: 390px;
+    border: 1px solid black;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAh2VX6JcnrWeYazl-XUFOj-yx0_kBi6mJjNHOH7UAWglxjN9IHyD0pql6gvLyheogH2E&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    border-radius: 70%;
+}
+.four:hover{
+    width:400px ;
+    height: 430px;
+    border-radius: 10%;
+}
+.price_four{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(251, 249, 249);
+    font-size: 30px;
+   color: black;
+   background-color: gray;border-radius: 10px;
+   text-align: center;
+   position: relative;
+   top: 345px;
+}
+.five{
+    width:350px ;
+    height: 390px;
+    border: 1px solid black;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/fVQ6aS94iz9xDt6YAdzmkS-1200-80.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 70%;
+}
+.five:hover{
+    width:400px ;
+    height: 430px;
+    border-radius: 10%;
+}
+.price_five{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(251, 249, 249);
+    font-size: 30px;
+    color: black;
+   background-color: gray;border-radius: 10px;
+   text-align: center;
+   position: relative;
+   top: 345px;
+}
+.six{
+    width:350px ;
+    height: 390px;
+    border: 1px solid black;
+    background-image: url(https://endurance.biz/wp-content/uploads/2024/01/230108_SCOTT-x-Team-DSM-02.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 70%;
+}
+.six:hover{
+    width:400px ;
+    height: 430px;
+    border-radius: 10%;
+}
+.price_six{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(251, 249, 249);
+    font-size: 30px;
+   color: black;
+   background-color: gray;border-radius: 10px;
+   text-align: center;
+   position: relative;
+   top: 345px;
+}
+.footer{
+    width: 1500px;
+    height: 150px;
+    border: 1px solid black;
+    background: linear-gradient(to left top,rgb(53, 51, 51) 30%, rgb(20, 20, 22));
+
+}
+.back{  
+    width:200px ;
+    height: 50px;  
+    font-size: 30px;  
+    border-radius: 10px;
+    border: 1px solid black;
+    background:linear-gradient(to top left, rgb(188, 239, 5),rgb(0, 255, 42)) ;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+h3{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(142, 127, 127);
+}
+
+.cyclepicture{
+    width: 1500px;
+    height: 700px;
+    border: 1px solid black;
+    background-image: url(cyclebackground.jpeg);
+    background-position:100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.aboutbox{
+    width: 500px;
+    height: 100px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left:500px;
+    background: linear-gradient(to left top,  rgb(21, 121, 117) 30%, rgb(6, 6, 113));
+}
+.descriptionbox{
+    width: 1200px;
+    height: 450px;
+    font-size: 30px;
+    font-family: monospace;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 60px;
+    left: 200px;
+}
+.one{
+    font-size: 40px;
+    position: relative;
+    left: 300px;
+    font-family: sans-serif;
+}
+.footer{
+    width: 1500px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    top: 80px;
+    background: linear-gradient(to left top,  rgb(30, 23, 23) 30%, rgb(37, 37, 44));
+}
+.backpage{
+    width: 200px;
+    height:50px;
+    font-size:30px;
+    border: 1px solid black;
+    background: linear-gradient(to left top,  rgb(74, 236, 10) 30%, rgb(177, 216, 2));
+    border-radius: 10%;
+    position: relative;
+    top: 100px;
+    
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}

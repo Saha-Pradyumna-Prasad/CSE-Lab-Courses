@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="formforeverybike_style.css">
+</head>
+<body>
+    <div class="formouterbox">
+   <h2><b><u>Payment Form</u></b></h2>
+<form id="paymentForm">
+  <label for="username" class="usertxt"><b>User Name</b></label><br>
+  <input type="text" id="username" name="username" required class="usertxtinputbox"/><br>
+
+  <label for="email" class="emailtxt"><b>Email</b></label><br>
+  <input type="email" id="email" name="email" required class="emailtxtinputbox" /><br>
+
+  <label for="phone" class="phonetxt"><b>Phone</b> Number</label><br>
+  <input type="tel" id="phone" name="phone" required class="phonetxtinputbox"/><br>
+
+  <label for="address" class="addresstxt"><b>Address</b></label><br>
+  <input type="text" id="address" name="address" required class="addresstxtinputbox"/><br>
+
+  <label for="country" class="countrybox" ><b>Country</b></label><br>
+  <select id="country" name="country" required class="countryinputbox">
+    <option value="" disabled selected>Select your country</option>
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="India">India</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="USA">USA</option>
+    <option value="Other">Other</option>
+  </select><br>
+
+  <label for="amount" class="amounttxtbox"><b>Amount (Tk)</b></label><br>
+  <input type="number" id="amount" name="amount" min="1" required class="amountinputbox" /><br>
+
+  <label for="payment" class="paymenttxtbox"><b>Payment Method</b></label><br>
+  <select id="payment" name="payment" required class="paymentinputbox"><br>
+    <option value="" disabled selected class="selectpayment">Select payment method</option><br>
+    <option value="bkash">Bkash</option>
+    <option value="nagad">Nagad</option>
+    <option value="rocket">Rocket</option>
+  </select><br><br>
+
+  <button type="submit" class="submitbtn"><b>Submit</b></button>
+</form>
+</div>
+<script src="form structure_javas.js"></script>
+</body>
+</html>

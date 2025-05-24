@@ -1,0 +1,52 @@
+body{
+ background-color: rgb(216, 225, 222); 
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+}
+.outerbox{
+    width: 1000px;
+    height: 420px;
+    border: 1px solid black;
+    /* display: flex;
+    justify-content: space-between; */
+    position: relative;
+    left: 250px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1733317329851-84b68e48f8d8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGhhbmslMjB5b3V8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 10px;
+}
+.likepicture{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url();
+    
+}
+.thanku{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    
+}
+.visit{
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+}
+.backtohomepage{
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    font-size:30px ;
+    text-align: center;
+    border-radius:10px ;
+    background-color: chartreuse;
+}
+.backtohomepage:hover{
+    background-color: yellow;
+}
