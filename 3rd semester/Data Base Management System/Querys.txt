@@ -1,0 +1,207 @@
+-- drop database e_e_m_s;
+-- CREATE DATABASE E_E_M_S;
+-- USE  E_E_M_S;
+CREATE TABLE Users(
+User_ID INT(10) PRIMARY KEY,
+Name_s VARCHAR(50),
+Email VARCHAR(100) NOT NULL UNIQUE,
+Phone VARCHAR(15) ,
+Password VARCHAR(255) NOT NULL,
+Role ENUM('Admin', 'Organizer', 'Attendee')
+);
+
+INSERT INTO Users (User_ID , Name_s , Email , Phone , Password , Role) VALUES
+(001,'Rahim Khan', 'rahim@gmail.com', '01712345678', 'dbsd*dfaaf', 'Attendee'),
+(002,'Karim Ahmed', 'karim@gmail.com', '01723456789', 'sfgd886dds@', 'Organizer'),
+(003,'Fatema Begum', 'fatema@gmail.com', '01734567890', '126d4fdf8', 'Attendee'),
+(004,'Ankur', 'ankur2003.8@gmail.com', '01890255384', 'ankur@@123', 'Admin'),
+(005,'Jamal Hossain', 'jamal@gmail.com', '01756789012', '544544dszvfd', 'Attendee'),
+(006,'Nabila Sultana', 'nabila@gmail.com', '01767890123', '66bhdvdvdv@', 'Organizer'),
+(007,'Rafiqur Rahman', 'rafiqur@gmail.com', '01778901234', 'djbfgas66', 'Attendee'),
+(008,'Shabnam Akter', 'shabnam@gmail.com', '01789012345', 'rfgddd5556', 'Attendee'),
+(009,'Tariq Islam', 'tariq@gmail.com', '01790123456', '@jfdjka645', 'Organizer'),
+(0010,'Zara khan', 'zara@gmail.com', '01701234567', '@@kodjods', 'Admin');
+-- SELECT *FROM Users;
+-- --Query 1:
+-- ALTER TABLE Users ADD COLUMN User_Adress VARCHAR(150);
+-- --Query 2:
+-- ALTER TABLE Users MODIFY COLUMN Phone INT(15);
+-- --Query 3:
+-- ALTER TABLE Users DROP COLUMN User_Adress;  
+
+CREATE TABLE Event_s(
+Event_ID INT(10) PRIMARY KEY,
+Title VARCHAR(100) NOT NULL,
+Descriptions TEXT,
+Dates DATE NOT NULL,
+Times TIME NOT NULL,
+Location VARCHAR(200),
+Max_capacity INT CHECK(Max_capacity>0 AND Max_capacity>=30)
+);
+INSERT INTO Event_s (Event_ID, Title, Descriptions, Dates, Times, Location, Max_capacity) VALUES
+(12391, 'Dhaka International Trade Fair', 'Annual trade fair showcasing products from local and international vendors.', '2023-12-01', '10:00:00', 'Bangabandhu International Conference Center, Dhaka', 1000),
+(12392, 'Ekushey Book Fair', 'The largest book fair in Bangladesh celebrating Bengali literature and culture.', '2023-02-01', '09:00:00', 'Dhaka University Campus, Dhaka', 500),
+(12393, 'Pohela Boishakh Festival', 'Traditional Bengali New Year celebrations with cultural programs.', '2023-04-14', '08:00:00', 'Ramna Park, Dhaka', 2000),
+(12394, 'Dhaka International Film Festival', 'Showcasing independent and international films.', '2023-03-20', '16:00:00', 'Shilpakala Academy, Dhaka', 300),
+(12395, 'Bangladesh Fashion Week', 'Annual fashion event featuring designers and models from Bangladesh.', '2023-11-05', '18:00:00', 'Pan Pacific Sonargaon Hotel, Dhaka', 400),
+(12396, 'Chittagong Hill Tracts Cultural Festival', 'Traditional festival showcasing indigenous culture and heritage.', '2023-10-10', '10:00:00', 'Chittagong Hill Tracts, Bandarban', 600),
+(12397, 'Sylhet Tea Festival', 'Celebrating tea industry and culture in the Sylhet region.', '2023-09-15', '09:30:00', 'Sylhet Tea Gardens, Sylhet', 500),
+(12398, 'Bagerhat Mosque Heritage Tour', 'Tour and events focused on historic mosques and architecture.', '2023-08-20', '11:00:00', 'Bagerhat, Khulna Division', 300),
+(12399, 'Rajshahi Silk Festival', 'Festival promoting Rajshahi silk and handloom products.', '2023-07-25', '10:00:00', 'Rajshahi City Center, Rajshahi', 450),
+(123910, 'Coxâ€™s Bazar Beach Carnival', 'Annual beach carnival with cultural programs and sports.', '2023-12-20', '15:00:00', 'Coxâ€™s Bazar Beach, Coxâ€™s Bazar', 1000);
+ -- SELECT *FROM Event_s;
+
+-- --Query 4:
+-- ALTER TABLE Event_s RENAME COLUMN Location TO Program_Location;
+-- --Query 5:
+-- ALTER TABLE Event_s RENAME TO Event_Details;
+-- SELECT *FROM Event_Details;
+-- ALTER TABLE Event_Details RENAME TO Event_s;
+-- SELECT *FROM Event_s;
+
+
+CREATE TABLE Tickets(
+Ticket_ID INT(10) PRIMARY KEY,
+Event_ID INT(10),
+FOREIGN KEY(Event_ID) REFERENCES Event_s(Event_ID),
+Ticket_type VARCHAR(50) NOT NULL,
+Price DECIMAL(10, 2) NOT NULL,
+Total_available INT CHECK (total_available >= 0),
+Total_sold INT DEFAULT 0 CHECK (total_sold >= 0)
+);
+INSERT INTO Tickets (Ticket_ID, Event_ID, Ticket_type, Price, Total_available, Total_sold) VALUES
+(40121, 12391 , 'VIP', 1500.00, 100, 4),
+(40122, 12392, 'General ', 500.00, 400, 32),
+(40123, 12393, 'Regular', 200.00, 300, 50),
+(40124, 12394, 'Entry Pass', 100.00, 500, 50),
+(40125, 12395, 'Screening', 800.00, 250, 30),
+(40126, 12396, 'Front Row', 1200.00, 50, 20),
+(40127, 12397, 'Cultural Pass', 300.00, 200, 32),
+(40128, 12398, 'Tea Tour', 400.00, 150, 20),
+(40129, 12399, 'Heritage Entry', 350.00, 100, 35),
+(401210, 123910, 'Silk Festival Pass', 600.00, 180, 40);
+-- SELECT *FROM Tickets;
+
+-- --Query 11:
+SELECT Ticket_type,Price FROM Tickets WHERE Ticket_type="VIP" AND Price= 1500.00;
+-- --Query 12:
+SELECT Ticket_type FROM Tickets WHERE (Price BETWEEN 500.00 AND 1200.00);
+-- --Query 13:
+ SELECT MAX(Price) AS HighestPrice FROM Tickets;
+ -- --Query 14:
+ SELECT MIN(Price) AS SmallestOrderPrice FROM Tickets;
+ -- --Query 15:
+ SELECT SUM(Total_sold) AS Total_Ticket_Sold FROM Tickets;  
+
+
+
+CREATE TABLE Registrations(
+Registration_id INT(10) PRIMARY KEY,
+User_ID INT(10),
+FOREIGN KEY(User_ID) REFERENCES Users(User_ID),
+Event_ID INT(10),
+FOREIGN KEY(Event_ID) REFERENCES Event_s(Event_ID),
+Ticket_ID INT(10),
+FOREIGN KEY (Ticket_ID) REFERENCES Tickets(Ticket_ID),
+Registration_date DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO Registrations (Registration_id, User_ID, Event_ID, Ticket_ID, Registration_date) VALUES
+(1235461, 001, 12391, 40121, '2023-11-01 09:15:00'),
+(1235462,002, 12392, 40122, '2023-11-01 09:30:00'),
+(1235463, 003, 12393, 40123, '2023-02-10 10:00:00'),
+(1235464, 004, 12394, 40124, '2023-04-14 08:30:00'),
+(1235465, 005, 12395, 40125, '2023-11-10 11:15:00'),
+(1235466, 006, 12396, 40126, '2023-11-25 18:30:00'),
+(1235467, 007, 12397, 40127, '2023-10-10 10:45:00'),
+(1235468, 008, 12398, 40128, '2023-09-15 09:45:00'),
+(1235469, 009, 12399, 40129, '2023-08-20 11:30:00'),
+(12354610, 0010, 123910, 401210, '2023-07-25 10:00:00');
+-- SELECT *FROM Registrations;
+
+-- --Query 6:
+ALTER TABLE Registrations ADD (Name VARCHAR(50),Age INT(50));
+
+CREATE TABLE Feedback(
+    Feedback_ID INT(10) PRIMARY KEY,
+    Event_ID INT(10),
+    FOREIGN KEY(Event_ID) REFERENCES Event_s(Event_ID),
+    User_ID INT(10),
+    FOREIGN KEY (User_ID) REFERENCES Users(User_ID) ,
+    Rating INT CHECK (rating >= 1 AND rating <= 5),
+    Comments TEXT,
+    Feedback_date DATETIME DEFAULT CURRENT_TIMESTAMP    
+);
+INSERT INTO Feedback (Feedback_ID, Event_ID, User_ID, Rating, Comments, Feedback_date) VALUES
+(3121, 12391, 001, 5, 'Amazing event with great organization!', '2023-12-02 14:00:00'),
+(3122, 12391, 002, 4, 'Very informative but venue was a bit crowded.', '2023-12-02 15:30:00'),
+(3123, 12392, 003, 5, 'Loved the cultural performances and food stalls.', '2023-02-03 12:20:00'),
+(3124, 12393, 004, 4, 'Good exhibition but could use more lighting.', '2023-04-15 10:00:00'),
+(3125, 12394, 005, 3, 'Food Festival was okay, but queue management needed improvement.', '2023-11-11 12:45:00'),
+(3126, 12395, 006, 5, 'Startup Pitch Night was inspirational and well executed.', '2023-11-26 19:30:00'),
+(3127, 12396, 007, 4, 'Great cultural festival but weather was hot.', '2023-10-11 11:15:00'),
+(3128, 12397, 008, 5, 'Loved the tea festival and the tours.', '2023-09-16 13:00:00'),
+(3129, 12398, 009, 4, 'Heritage tour was enlightening.', '2023-08-21 10:10:00'),
+(31210, 12399, 0010, 5, 'Silk festival had beautiful products and friendly sellers.', '2023-07-26 14:25:00');
+SELECT *FROM Feedback;
+SELECT COUNT(User_ID) AS Total_UserID_Registerd FROM Feedback;  
+
+-- --Query 7:
+SELECT DISTINCT Event_ID FROM Feedback;  
+-- --Query 8:
+SELECT * FROM Feedback WHERE Comments LIKE 'a%';
+-- --Query 9:
+SELECT AVG(Rating) AS Average_Ratings FROM Feedback;  
+-- --Query 10:
+SELECT * FROM Feedback ORDER BY Feedback_date DESC;
+
+-- Query 16:
+SELECT Users.Name_s FROM Users INNER JOIN
+Registrations ON Users.User_ID = Registrations.User_ID;
+-- Query 17:
+SELECT Event_s.Event_ID,Event_s.Title FROM Event_s LEFT JOIN
+Tickets ON Event_s.Event_ID = Tickets.Event_ID;
+-- --Query 18:
+SELECT * FROM Event_s WHERE Title LIKE 'd%' OR 'e%';
+-- --Query 19:
+SELECT AVG(Price) AS Average_Price FROM Tickets;
+-- Query 20:
+SELECT  Event_s.Event_ID,Event_s.Title,Feedback.Rating FROM Event_s LEFT JOIN
+Feedback ON Event_s.Event_ID = Feedback.Event_ID WHERE Feedback.Rating=4;
+
+SELECT Users.Name_s, COUNT(Registrations.User_ID) AS RegistrationCount FROM Users
+INNER JOIN Registrations ON Users.User_ID = Registrations.User_ID
+GROUP BY Users.Name_s;
+
+CREATE TABLE Purchase_Tickets(
+Ticket_ID INT(10) ,
+FOREIGN KEY(Ticket_ID) REFERENCES Tickets(Ticket_ID),
+Event_ID INT(10),
+FOREIGN KEY(Event_ID) REFERENCES Event_s(Event_ID),
+
+User_ID INT(10) ,
+FOREIGN KEY(User_ID) REFERENCES Users(User_ID),
+Purchased INT(3) CHECK(Purchased>0)
+);
+INSERT INTO Purchase_Tickets (Ticket_ID, Event_ID, User_ID, Purchased) VALUES
+(40121, 12391, 001, 5),
+(40122, 12392, 002, 3),
+(40123, 12393, 003, 2),
+(40124, 12394,004, 4),
+(40125, 12395, 005, 1),
+(40126, 12396, 006, 6),
+(40127, 12397, 007, 2),
+(40128, 12398, 008, 7),
+(40129, 12399, 009, 8),
+(401210, 123910,010, 9);
+select *from Purchase_Tickets;
+-- -- (Ticket_ID, Event_ID, User_ID, Purchased,(total_available-Purchased),(total_sold+Purchased))
+
+
+SELECT
+    pt.Ticket_ID, pt.Event_ID, pt.User_ID, pt.Purchased, t.Ticket_type, (t.Total_available - pt.Purchased)
+    AS Remaining_Tickets, (t.Total_sold + pt.Purchased) AS Updated_Total_Sold,
+    CASE
+        WHEN u.Role = 'Admin' THEN 'Admin' ELSE u.Name_s
+    END AS User_Name, e.Title AS Event_Title
+FROM Purchase_Tickets pt INNER JOIN Tickets t ON pt.Ticket_ID = t.Ticket_ID INNER JOIN Event_s e ON pt.Event_ID = e.Event_ID
+INNER JOIN Users u ON pt.User_ID = u.User_ID;
